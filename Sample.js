@@ -61,6 +61,18 @@ var answer = document.querySelector("#final");
 var ind = 0;
 var final = "";
 submit.addEventListener("click",function() {
+if(male.checked == false && female.checked == false){
+	alert("Please select either Male or Female.")
+	return;
+}
+if(age.value == ""){
+	alert("Please enter your age.")
+	return;
+}
+if(tno.checked == false && tyes.checked == false){
+	alert("Please select either Yes or No for tobacco.")
+	return;
+}
 if(male.checked == true){
 	if(tno.checked == true)
 		ind = 0;
@@ -79,6 +91,6 @@ if(A <= 17)
 else
 	Age = A;
 ans = dict[Age][ind];
-final = "The price is $" +  ans;
+final = "Here's your quote  $" +  ans;
 alert(final);
 });
