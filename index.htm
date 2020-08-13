@@ -2,9 +2,38 @@
 <html>
 <head>
 	<title>Get Your Quote Now!</title>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  	h1{
+  		font-family: "Helvetica";
+  		color: #0059b3;
+  	}
+  	a{
+  		color: white;
+  		text-decoration: none;
+  	}
+  	a:hover{
+  		color: white;
+  		text-decoration: none;
+  	}
+  	div{
+  		display: block;
+  		text-align: center;
+  	}
+  	@media (max-width: 400px) {
+  	iframe {
+    width: 100%;
+  	}
+	}
+  </style>
 </head>
 <body>
-<iframe src="Sample.html" width="80%" height="300" style="border:1px solid black; margin: 120px;"></iframe>
+<div>
+<h1><strong>Individual Quote</strong></h1>
+<iframe src="Sample.html" width="30%" height="300" style="border:1px solid black; margin-top: 1px;"></iframe>
+<br>
+<button type="button" id="submit" class="btn btn-inverse btn-primary"><strong><a href="http://www.google.com">I Need More Informat	ion</a></strong></button>
+</div>
 </body>
 </html>
